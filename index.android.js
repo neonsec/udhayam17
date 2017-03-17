@@ -6,6 +6,7 @@ import {  AppRegistry } from 'react-native';
 import { ScrollView, Text, Image, View, StyleSheet } from 'react-native';
 import { Container, Content, Form, Item, Input, Label, Button , Body, Footer, Icon, Title} from 'native-base';
 import PagetwoScreen from './PagetwoScreen.js';
+import PagethreeScreen from './PagethreeScreen.js';
 // import PagethreeScreen from './PagethreeScreen.js';
 // import ItemScreen from './ItemScreen.js';
 const images = {
@@ -27,7 +28,8 @@ class App extends React.Component {
   static navigationOptions = {
   //   title: 'NaturesBowl',
   header: ({ state, setParams }) => ({
-    visible: false
+    visible: false,
+     headerMode: 'none'
   })
   };
   render () {
@@ -64,6 +66,7 @@ class App extends React.Component {
 const Nav = StackNavigator({
   Home: {screen: App},
   Pagetwo: { screen: PagetwoScreen },
+  Pagethree: { screen: PagethreeScreen}
   // Pagethree: { screen: PagethreeScreen }
 
 
