@@ -96,7 +96,7 @@ android {
             abiFilters "armeabi-v7a", "x86"
         }
     }
-    splits {
+  splits {
         abi {
             reset()
             enable enableSeparateBuildPerCPUArchitecture
@@ -108,6 +108,7 @@ android {
         release {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+	   
         }
     }
     // applicationVariants are e.g. debug, release

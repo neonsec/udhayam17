@@ -167,10 +167,10 @@ Young friends, I am confident that the ambience of this Institution will fulfil 
                           <Button onPress={() => navigate('Pagethree')}>
                             <Text style={{color: '#fff', fontWeight: 'bold'}}>Events</Text>
                           </Button>
-                          <Button >
+                          <Button onPress={() => navigate('Pagefour')}>
                             <Text style={{color: '#fff', fontWeight: 'bold'}}>Register</Text>
                           </Button>
-                          <Button>
+                          <Button onPress={() => navigate('Pagefive')}>
                             <Text style={{color: '#fff', fontWeight: 'bold'}}>Contact</Text>
                           </Button>
                         </FooterTab>
